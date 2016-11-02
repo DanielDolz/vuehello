@@ -15,6 +15,10 @@ require('./bootstrap');
 
 Vue.component('example', require('./components/Example.vue'));
 
+//Vm: view model
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    data: {
+        message: 'Hello Vue!'
+    }
 });
